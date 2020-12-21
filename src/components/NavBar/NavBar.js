@@ -1,7 +1,12 @@
-import React from 'react';
-import { Nav, NavbarContainer, NavIcon, NavLogo  } from './NavBar.elements';
+import React, { useState } from 'react';
+import { Nav, NavbarContainer, NavIcon, NavLogo, MobileIcon  } from './NavBar.elements';
+import { FaTimes, FaBars } from 'react-icons/fa';
 
 const NavBar = () => {
+    const [click, setClick] = useState(false);
+
+    const handleClick = () => setClick(!click);
+    
     return (
         <div>
             <Nav>
@@ -10,6 +15,9 @@ const NavBar = () => {
                         <NavIcon/>
                         USMAN
                     </NavLogo>
+                    <MobileIcon>
+                        {click ? <FaTimes /> : <FaBars />}
+                    </MobileIcon>
                 </NavbarContainer>
             </Nav>
         </div>
