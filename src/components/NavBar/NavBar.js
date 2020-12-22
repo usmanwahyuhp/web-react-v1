@@ -49,7 +49,7 @@ const NavBar = () => {
                         </MobileIcon>
                         <NavMenu onClick={handleClick} click={click}>
                             <NavItem>
-                                <NavLinks to='/Home'>
+                                <NavLinks to='/'>
                                 Home
                                 </NavLinks>
                             </NavItem>
