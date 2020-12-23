@@ -9,4 +9,7 @@ export const homeObjOne = {
     description:
         'We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.',
     buttonLabel: 'Get Started',
+    start: '',
+    img: '',
+    alt: 'image'
 }
