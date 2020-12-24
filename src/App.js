@@ -1,8 +1,8 @@
-import React from 'react'
-import NavBar from './components/NavBar/NavBar'
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import GlobalStyle from './globalStyles';
 import Home from './pages/HomePage/Home'
+import { Footer, NavBar } from './components';
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
       <Switch>
         <Route path='/' exact component={Home} />
       </Switch>
+      <Footer />
     </Router>
   );
 }
